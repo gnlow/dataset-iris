@@ -1,0 +1,1 @@
+export { getClasses, getCrossValidationSets, getDataset, getDistinctClasses, getNumbers } from "./iris.js"
