@@ -1,8 +1,8 @@
 'use strict';
 
-const dataset = require('./iris.json');
-const cvSetsK7 = require('./cvSetsK7.json');
-const cvSetsK5 = require('./cvSetsK5.json');
+import dataset from "./iris.json.js"
+import cvSetsK7 from "./cvSetsK7.json.js"
+import cvSetsK5 from "./cvSetsK5.json.js"
 
 function getDataset() {
   return dataset.slice();
@@ -57,7 +57,7 @@ function getCrossValidationSets(k, options) {
   return res;
 }
 
-module.exports = {
+export {
   getDataset,
   getNumbers,
   getClasses,
